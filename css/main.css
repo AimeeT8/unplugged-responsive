@@ -120,7 +120,6 @@ header .content-wrapper {
   justify-content: center;
   align-items: center; 
   flex-flow: row wrap;
-  width: 100%;
   margin: 0;
 
 }
@@ -159,6 +158,10 @@ footer {
   flex-direction: column; 
 }
 
+footer p {
+  margin: 0;
+}
+
 
 footer .content-wrapper{
   width: 55%;
@@ -182,10 +185,6 @@ footer .social-icons p {
   justify-content: center;
   align-items: center;
 
-}
-
-.footer p {
-  margin: 0;
 }
 
 footer .copyright {
@@ -232,7 +231,7 @@ aside {
   margin: 30px 0;
 }
 
-.features .feature-items {
+.features .features-items {
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -303,6 +302,7 @@ margin-bottom: 40px;
       }
 
 .faq .content-wrapper {
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -317,27 +317,6 @@ margin-bottom: 40px;
 .faq-content {
         margin-bottom: 50px;
       }
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -490,7 +469,6 @@ margin-bottom: 40px;
     align-items: center;
     flex-flow: column wrap;
     flex-basis: 50%;
-
   }
 
   .features .features-item-description {
@@ -501,7 +479,6 @@ margin-bottom: 40px;
   .reviews article {
     display: flex;
     justify-content: space-between;
-
   }
 
   .reviews article div {
@@ -542,7 +519,7 @@ margin-bottom: 40px;
   width: 40%;
 }
 
-.content-section .content-wrapper h2 {
+.contact-section .content-wrapper h2 {
   width: 80%;
 }
 
@@ -574,19 +551,79 @@ margin-bottom: 40px;
 
 }
 
+
+/*Desktop Styles here*/
+
 @media only screen and (min-width: 1200px) {
-  /*Desktop styles here */
+  /*Homepage styles*/
+
+
+.content-wrapper {
+  max-width: 960px;
+  
+}
+
+
+/*Hero Area */
+.hero-area h1 {
+  width: 60%;
+}
+
+/*Aside*/
+
+aside .content-wrapper {
+  justify-content: space-around;
+}
+
+aside .content-wrapper .form-description, 
+aside .content-wrapper .form {
+  width: 30%;
+}
+
+
+/* Features */
+
+.features h2 {
+  width: 70%;
+
+}
+
+.features article {
+  flex-basis: 33%;
+}
+
+/* Reviews */
+.reviews article div {
+  width: 42%;
+}
+
+/*=====================About Page======================*/
+
+.mission h2,
+.contact-section .content-wrapper h2 {
+  width: 100%;
+}
+
+.contact-section .content-wrapper h2 {
+  margin-bottom: 40px;
 }
 
 
 
+/*============================FAQ Page===============================*/
 
-@media print, 
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+.faq h2 {
+  width: 100%;
+
 }
+
+.faq-content {
+  flex-basis: 35%;
+
+  }
+}
+
+
 
 
 /* ==========================================================================
