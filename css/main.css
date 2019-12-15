@@ -109,12 +109,14 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   text-align: left; 
+  color: #e2e3ed;
 }
 
 
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 500;
 }
 
 h3, 
@@ -122,12 +124,13 @@ h4 {
   font-family: 'Poppins', sans-serif;
   margin: 20px 0;
   font-size: 1.125em;
+  font-weight: 500;
 }
 
 
 p {
   font-size: 0.875em;
-  linbe-height: 1.285;
+  line-height: 1.285;
 }
 
 a {
@@ -140,21 +143,17 @@ ol {
   list-style-type: none;
 }
 
-address {
-  font-size: 1em;
-}
-
-
-
    .content-wrapper {
      width: 90%;
      margin: 50px 0;
+    
    }
 
    /* ----- Base header - footer styles  ------- */
 
 header, 
 footer{
+  background-color: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,7 +168,6 @@ header .content-wrapper {
   align-items: center; 
   flex-flow: row wrap;
   margin: 0;
-
 }
 
 header {
@@ -177,13 +175,11 @@ header {
 }
 
 .header-divider {
+  background: #3a3a3a;
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
-}
-
-  
-
+  }
 
 
 header nav {
@@ -192,18 +188,24 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
-
-}
+  font-weight: 700;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+}
 
+header nav ul li {
+  font-size: 1.125em;
 }
 
 footer {
   flex-direction: column; 
+  text-align: center;
 }
 
 footer p {
@@ -224,20 +226,19 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center; 
-
-
 }
 
 footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 footer .copyright {
  margin: 20px 0;
+ text-align: center;
 }
+
 
 
 /*-------------- Mobile Styles - Homepage ------------------*/
@@ -252,6 +253,10 @@ footer .copyright {
   flex-flow: row wrap;
 }
 
+.hero-area h1 {
+  font-size: 2.25em;
+}
+
 /* Aside */
 
 aside {
@@ -259,7 +264,34 @@ aside {
   justify-content: center;
   align-items: center; 
   flex-flow: row wrap;
+  background-color: #527158;
 
+}
+
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* Features */
@@ -284,10 +316,10 @@ aside {
   justify-content: center;
   align-items: center; 
   flex-flow: row wrap;
-
 }
 
 .features p {
+  text-align: center; 
   margin: 0;
 }
 
@@ -299,10 +331,12 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .reviews h2 {
 margin-bottom: 40px;
+line-height: 1;
 }
 
 .reivews h3 {
@@ -316,19 +350,22 @@ margin-bottom: 40px;
    About Page 
    =================================================================== */
 
+
+
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center; 
   flex-flow: row wrap;
-
-   }
+  }
 
 .contact-section {
   display: flex;
   justify-content: center;
   align-items: center; 
   flex-flow: row wrap;
+  background-color: #2a423a;
 
    }
 
@@ -346,6 +383,7 @@ margin-bottom: 40px;
   justify-content: center;
   align-items: center; 
   flex-flow: row wrap;
+  background-color: #527158;
 
       }
 
@@ -360,11 +398,17 @@ margin-bottom: 40px;
 
 .faq h2 {
         margin-bottom: 40px;
+        line-height: 1;
       }
 
 .faq-content {
         margin-bottom: 50px;
       }
+
+.faq-content h4 {
+  line-height: 1.333;
+  font-weight: 700;
+}
 
 
 
