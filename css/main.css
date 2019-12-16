@@ -406,11 +406,6 @@ line-height: 1;
   }
 
 
-
-
-
-
-
 .contact-section {
   display: flex;
   justify-content: center;
@@ -704,6 +699,11 @@ line-height: 1;
   width: 40%;
 }
 
+.map figure {
+  padding-bottom: 75%;
+}
+
+
 .contact-section .content-wrapper h2 {
   width: 80%;
 }
@@ -811,6 +811,11 @@ aside .content-wrapper .form {
 }
 
 /*=====================About Page======================*/
+
+.map figure {
+  padding-bottom: 37.5%;
+}
+
 
 .mission h2,
 .contact-section .content-wrapper h2 {
