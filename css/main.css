@@ -226,6 +226,7 @@ header nav ul li {
   font-size: 1.125em;
 }
 
+
 footer {
   flex-direction: column; 
   text-align: center;
@@ -295,7 +296,7 @@ footer .copyright {
 
 
 .hero-area h1 {
-  font-size: 2.25em;
+  font-size: 2.12em;
   
 }
 
@@ -570,7 +571,7 @@ line-height: 1;
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px min-height: 1366px) {
 
   /*General styles*/
 
@@ -754,6 +755,8 @@ line-height: 1;
 
 
   /*=====================FAQ Page=======================*/
+
+
 
 
   .faq .content-wrapper {
